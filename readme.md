@@ -1,33 +1,32 @@
+# imagemin-pngquant-mirror
+
+use `pngquant-bin-mirror` as dependencies
+
 # imagemin-pngquant [![Build Status](https://travis-ci.org/imagemin/imagemin-pngquant.svg?branch=master)](https://travis-ci.org/imagemin/imagemin-pngquant)
 
 > [Imagemin](https://github.com/imagemin/imagemin) plugin for [`pngquant`](https://github.com/kornelski/pngquant)
 
-
 ## Install
 
 ```
-$ npm install imagemin-pngquant
+$ npm install imagemin-pngquant-mirror
 ```
-
 
 ## Usage
 
 ```js
-const imagemin = require('imagemin');
-const imageminPngquant = require('imagemin-pngquant');
+const imagemin = require("imagemin");
+const imageminPngquant = require("imagemin-pngquant-mirror");
 
 (async () => {
-	await imagemin(['images/*.png'], {
-		destination: 'build/images',
-		plugins: [
-			imageminPngquant()
-		]
+	await imagemin(["images/*.png"], {
+		destination: "build/images",
+		plugins: [imageminPngquant()],
 	});
 
-	console.log('Images optimized');
+	console.log("Images optimized");
 })();
 ```
-
 
 ## API
 
